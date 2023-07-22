@@ -1,0 +1,33 @@
+.navbar{
+    background-color: #2C599D;
+    color: #F7AD19;
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    align-items: center; */
+    display: flex;
+}
+
+.navbar img{
+    width: 100px;
+}
+
+.navbar select{
+    background-color: #2C599D;
+    color: #F7AD19;
+    border: none;
+}
+
+.navbar h3{
+    padding-left: 10%;
+    padding-top: 0.9%;
+}
+
+.navbar button{
+    background-color: #2C599D;
+    color: #F7AD19;
+    border: 1px solid ;
+    margin-left: 10%;
+    margin-top: 1.5%;
+    height: 50px;
+}
