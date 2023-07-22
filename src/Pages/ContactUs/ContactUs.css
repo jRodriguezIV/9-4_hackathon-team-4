@@ -1,0 +1,10 @@
+.ContactUs {
+  display: flex;
+  flex-direction: column;
+}
+
+.ContactUs label,
+.ContactUs input,
+.ContactUs select {
+  margin-bottom: 10px;
+}
