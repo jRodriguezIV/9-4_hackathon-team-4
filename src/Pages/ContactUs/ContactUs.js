@@ -53,7 +53,23 @@ function ContactUs() {
       <h2>Contact Us!</h2>
       <p>Thank you for visiting Access & Learn. Please fill out the following form to send us a message about our services. Please click on the “SUBMIT” button when you are ready to send your message. You may use this form to request more information or to provide feedback about this website.</p>
       <div className="ContactUs">
-       </div>
+        <div className="ContactUs">
+          <form onSubmit={handleSubmit}>
+            <label className="form-label" htmlFor="name">
+              Name:
+            </label>
+            <input
+              className="form-control"
+              id="name"
+              type="text"
+              onChange={handleTextChange}
+              value={contactInfo.name}
+              placeholder="Your name"
+              required
+            />
+          </form>
+        </div>
+      </div>
     </div>
   );
 }
