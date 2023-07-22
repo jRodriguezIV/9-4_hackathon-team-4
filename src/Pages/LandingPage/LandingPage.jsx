@@ -4,6 +4,9 @@ import axios from 'axios'
 
 const URL = process.env.REACT_APP_API_URL;
 const KEY = process.env.REACT_APP_API_KEY;
+import {useEffect, useState} from 'react'
+import CarouselComp from "../../Components/Carousel/CarouselComp"
+import axios from 'axios'
 
 function LandingPage() {
   const [info, setInfo] = useState([])
@@ -17,9 +20,7 @@ function LandingPage() {
   console.log(info)
 
   return (
-    <div className="LandingPage">
-      <CarouselComp />
-    </div>
+   
   );
 }
 
