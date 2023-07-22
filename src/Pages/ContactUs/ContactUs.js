@@ -11,6 +11,7 @@ function ContactUs() {
     name: "",
     phone: "",
     email: "",
+    message: "",
     issue: "General Inquiry",
   });
 
@@ -56,9 +57,10 @@ function ContactUs() {
       <p>Thank you for visiting Access & Learn. Please fill out the following form to send us a message about our services. Please click on the “SUBMIT” button when you are ready to send your message. You may use this form to request more information or to provide feedback about this website.</p>
       <div className="ContactUs">
         <form onSubmit={handleSubmit}>
-          <label className="form-label" htmlFor="name">
+          <label className="form-label" htmlFor="name" style={{ maxWidth: '500px', margin: '0 auto', paddingTop: '50px' }}>
             Name:
           </label>
+          <br />
           <input
             className="form-control"
             id="name"
@@ -72,6 +74,7 @@ function ContactUs() {
           <label className="form-label" htmlFor="phone">
             Phone Number:
           </label>
+          <br />
           <input
             className="form-control"
             id="phone"
@@ -85,6 +88,7 @@ function ContactUs() {
           <label className="form-label" htmlFor="email">
             Email:
           </label>
+          <br />
           <input
             className="form-control"
             id="email"
@@ -94,10 +98,26 @@ function ContactUs() {
             placeholder="Your email"
             required
           />
+          < br/>
+          <label className="form-label" htmlFor="message">
+            Your Message:
+          </label>
+          <br />
+          <input
+            className="form-control"
+            id="message"
+            type="message"
+            onChange={handleTextChange}
+            value={contactInfo.message}
+            placeholder="Write your message here"
+            required
+          />
+
           <br />
           <label className="form-label" htmlFor="issue">
             Select an Issue:
           </label>
+          <br />
           <select
             className="form-select"
             id="issue"
