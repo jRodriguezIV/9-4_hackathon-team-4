@@ -15,7 +15,7 @@ export default function CarouselComp() {
             showArrows={true}
             infiniteLoop={true}
             autoPlay={true}
-            interval={1500}
+            interval={2000}
         >
 
             <div key={"image1"}>
