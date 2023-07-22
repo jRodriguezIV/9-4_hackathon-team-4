@@ -11,6 +11,7 @@ import Centers from './Components/Centers/Centers.jsx';
 function App() {
   return (
     <div className="App">
+
       <Router>
         <Navbar />
         <main>
