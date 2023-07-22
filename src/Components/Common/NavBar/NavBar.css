@@ -1,3 +1,5 @@
+
+
 .navbar {
     background-color: #2C599D;
     color: #F7AD19;
@@ -22,8 +24,8 @@
 }
 
 .navbar h3 {
-    padding-left: 1.5%;
-    padding-right: 1.5%;
+    padding-left: 1%;
+    padding-right: 1%;
     padding-top: 1%;
 }
 
@@ -47,17 +49,100 @@
     width: 70px;
 }
 
-a {
+.navbar a {
     text-decoration: none;
     color: #F7AD19;
 }
 
-h3 a:hover {
+.navbar h3 a:hover {
     color: #9FE7F5;
 }
 
-hr {
+.navbar hr {
     border: solid 0.5px #F7AD19;
     height: 25px;
     margin-top: 2%;
 }
+
+.test form{
+display: flex;
+flex-direction: column;
+margin: 10px;
+margin-right: 20%;
+}
+
+.test form div{
+    display: flex;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+
+.test form div:hover{
+    font-size: larger;
+    letter-spacing: 2px;
+    font-family: sans-serif;
+}
+
+.test{
+    display: flex;
+}
+
+.results{
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
+}
+
+.buttons input{
+    background-color: #2C599D;
+    border: none;
+    width: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: #F7AD19;
+    height: 50px;
+    margin-top: 2%;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+}
+
+.buttons input:hover{
+    background-color: #9FE7F5;
+    color: #11224D;
+}
+
+.test input[type="checkbox"]{
+    -webkit-appearance: none;
+    appearance: none;
+    /* background-color: #fff; */
+    margin: 0px;
+    color: #11224D;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid currentColor;
+    border-radius: 0.15em;
+    transform: translate(-0.075em);
+    display: grid;
+    place-content: center;
+}
+
+.test input[type="checkbox"]::before{
+content: '';
+width: 0.65em;
+height: 0.65em;
+transform: scale(0);
+transition: 120ms transform ease-in-out;
+box-shadow: inset 1em 1em var(--form-control-color);
+background-color: CanvasText;
+}
+
+.test input[type="checkbox"]:checked::before{
+    transform: scale(1);
+
+}
+

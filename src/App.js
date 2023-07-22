@@ -9,6 +9,7 @@ import LandingPage from './Pages/LandingPage/LandingPage.jsx';
 import Centers from './Components/Centers/Centers.jsx';
 import ContactUs from './Pages/ContactUs/ContactUs';
 import About from './Components/About';
+import TestComponent from './Components/TestComponent/TestComponent';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
 
             <Route path="/contact" element={<ContactUs />} />
             <Route path="/about" element={<About />} />
+            <Route path="/test" element={<TestComponent />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
