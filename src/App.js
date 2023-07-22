@@ -8,6 +8,8 @@ import NotFound from './Pages/NotFound/NotFound.jsx';
 import LandingPage from './Pages/LandingPage/LandingPage.jsx';
 import Centers from './Components/Centers/Centers.jsx';
 import ContactUs from './Pages/ContactUs/ContactUs';
+import About from './Components/About';
+
 
 function App() {
   return (
@@ -19,7 +21,9 @@ function App() {
           <Routes>
             <Route path="/" element={<LandingPage />} />
             <Route path="/centers" element={<Centers />} />
+
             <Route path="/contact" element={<ContactUs />} />
+            <Route path="/about" element={<About />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
