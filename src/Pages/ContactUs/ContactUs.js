@@ -53,22 +53,70 @@ function ContactUs() {
       <h2>Contact Us!</h2>
       <p>Thank you for visiting Access & Learn. Please fill out the following form to send us a message about our services. Please click on the “SUBMIT” button when you are ready to send your message. You may use this form to request more information or to provide feedback about this website.</p>
       <div className="ContactUs">
-        <div className="ContactUs">
-          <form onSubmit={handleSubmit}>
-            <label className="form-label" htmlFor="name">
-              Name:
-            </label>
-            <input
-              className="form-control"
-              id="name"
-              type="text"
-              onChange={handleTextChange}
-              value={contactInfo.name}
-              placeholder="Your name"
-              required
-            />
-          </form>
-        </div>
+        <form onSubmit={handleSubmit}>
+          <label className="form-label" htmlFor="name">
+            Name:
+          </label>
+          <input
+            className="form-control"
+            id="name"
+            type="text"
+            onChange={handleTextChange}
+            value={contactInfo.name}
+            placeholder="Your name"
+            required
+          />
+          <br />
+          <label className="form-label" htmlFor="phone">
+            Phone Number:
+          </label>
+          <input
+            className="form-control"
+            id="phone"
+            type="text"
+            onChange={handleTextChange}
+            value={contactInfo.phone}
+            placeholder="Your phone number"
+            required
+          />
+          <br />
+          <label className="form-label" htmlFor="email">
+            Email:
+          </label>
+          <input
+            className="form-control"
+            id="email"
+            type="email"
+            onChange={handleTextChange}
+            value={contactInfo.email}
+            placeholder="Your email"
+            required
+          />
+          <br />
+          <label className="form-label" htmlFor="issue">
+            Select an Issue:
+          </label>
+          <select
+            className="form-select"
+            id="issue"
+            onChange={handleSelectChange}
+            value={contactInfo.issue}
+          >
+            <option value="General Inquiry">General Inquiry</option>
+            <option value="Technical Support">Technical Support</option>
+            <option value="Feedback">Feedback</option>
+            <option value="Other">Other</option>
+          </select>
+          <br />
+          <input
+            className="btn btn-primary"
+            type="submit"
+            value={"Submit"}
+          />
+          <button className="btn btn-secondary" type="button" onClick={handleClear}>
+            Clear Fields
+          </button>
+        </form>
       </div>
     </div>
   );
