@@ -1,0 +1,16 @@
+
+div h1 {
+  text-align: center;
+}
+
+.centers-table {
+  table-layout: fixed;
+  width: 80%;
+  border-collapse: collapse;
+}
+
+.center-table-row {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
