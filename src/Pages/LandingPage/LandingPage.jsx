@@ -1,7 +1,12 @@
+import {useEffect, useState} from 'react'
+import CarouselComp from "../../Components/Carousel/CarouselComp"
+import axios from 'axios'
 
 function LandingPage() {
   return (
-    <div></div>
+    <div className="LandingPage">
+      
+    </div>
   );
 }
 
