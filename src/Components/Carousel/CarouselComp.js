@@ -12,10 +12,10 @@ export default function CarouselComp() {
         <Carousel
             autoFocus={true}
             showThumbs={false}
-            showArrows={false}
+            showArrows={true}
             infiniteLoop={true}
             autoPlay={true}
-            // onclickItem={}
+            interval={1500}
         >
 
             <div key={"image1"}>
