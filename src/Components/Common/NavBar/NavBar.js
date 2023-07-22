@@ -12,6 +12,8 @@ export default function Navbar() {
             <hr/>
             <h3><Link to='/test'>DYSLEXIA TEST</Link></h3>
             <hr/>
+            <h3><Link>TEXT CONVERTER</Link></h3>
+            <hr/>
             <h3><Link to='/about'>ABOUT</Link></h3>
             <button><img src={ax} alt="accessibility"/></button>
         </div>
