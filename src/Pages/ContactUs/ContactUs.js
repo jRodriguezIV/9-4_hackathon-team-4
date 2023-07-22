@@ -3,6 +3,8 @@ import axios from 'axios';
 import { useNavigate } from "react-router-dom";
 //const API = process.env.REACT_APP_API_URL;
 
+import "../ContactUs/ContactUs.css"
+
 function ContactUs() {
   const navigate = useNavigate();
   const [contactInfo, setContactInfo] = useState({
