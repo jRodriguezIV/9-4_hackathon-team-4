@@ -12,7 +12,6 @@ function ContactUs() {
     issue: "General Inquiry",
   });
 
-
   // const addContactInfo = () => {
   //   axios
   //     .post(`${API}/contact`, contactInfo) // Replace `/contact` with the actual API endpoint to handle contact form submissions
