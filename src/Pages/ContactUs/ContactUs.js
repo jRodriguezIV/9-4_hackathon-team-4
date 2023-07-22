@@ -12,6 +12,20 @@ function ContactUs() {
     issue: "General Inquiry",
   });
 
+  const handleTextChange = (event) => {
+    setContactInfo({ ...contactInfo, [event.target.id]: event.target.value });
+  };
+
+  const handleSelectChange = (event) => {
+    setContactInfo({ ...contactInfo, [event.target.id]: event.target.value })
+  }
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    //addContactInfo()
+    handleClear();
+  };
+
   // const addContactInfo = () => {
   //   axios
   //     .post(`${API}/contact`, contactInfo) // Replace `/contact` with the actual API endpoint to handle contact form submissions
