@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import { HiPlay, HiStop } from 'react-icons/hi2'
 
 export default function TestComponent() {
@@ -6,7 +6,6 @@ export default function TestComponent() {
 
     const [submitted, setSubmit] = useState(false)
     const [counter, setCounter] = useState(0)
-    const [result, setResult] = useState('')
     const [test, setTest] = useState({
         readSlowly: false,
         troubleReading: false,
