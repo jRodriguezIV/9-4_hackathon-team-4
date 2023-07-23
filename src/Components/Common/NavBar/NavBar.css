@@ -80,13 +80,14 @@ margin-right: 20%;
     display: flex;
     margin-top: 2%;
     margin-bottom: 1%;
+    padding: 1%;
 }
 
-.test form div:hover{
-    font-size: larger;
+/* .test form label:hover{
     letter-spacing: 2px;
     font-family: sans-serif;
-}
+    margin-right: -10%;
+} */
 
 .test{
     display: flex;
@@ -149,6 +150,14 @@ background-color: CanvasText;
 .test input[type="checkbox"]:checked::before{
     transform: scale(1);
 
+}
+
+.test tr{
+    background-color: #d3d3d3;
+}
+
+.test table{
+    width: 150%;
 }
 
 
