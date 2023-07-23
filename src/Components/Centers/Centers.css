@@ -17,7 +17,7 @@ table th {
   padding: 8px;
 }
 
-table tr:nth-child(even) {
+.table-setion table tr:nth-child(even) {
   background-color: #f2f2f2;
 }
 
