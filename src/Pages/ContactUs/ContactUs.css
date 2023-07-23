@@ -3,6 +3,11 @@
   flex-direction: column;
 }
 
+.NewContact {
+  font-size: 120%;
+  letter-spacing: 2px;
+}
+
 .ContactUs label {
   margin-bottom: 10px;
 }
@@ -11,4 +16,9 @@
 .ContactUs select {
   padding: 5px;
   margin-bottom: 10px;
+}
+
+.custom-button {
+  font-size: 12px;
+  padding: 5px 5px;
 }
