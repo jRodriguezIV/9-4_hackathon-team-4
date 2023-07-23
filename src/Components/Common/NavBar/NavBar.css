@@ -73,14 +73,14 @@
 display: flex;
 flex-direction: column;
 margin: 10px;
-margin-right: 20%;
+/* margin-right: 20%; */
 }
 
 .test form div{
     display: flex;
     margin-top: 2%;
     margin-bottom: 1%;
-    padding: 1%;
+
 }
 
 /* .test form label:hover{
@@ -152,7 +152,7 @@ background-color: CanvasText;
 
 }
 
-.test tr{
+.test tr div{
     background-color: #d3d3d3;
 }
 
@@ -160,6 +160,9 @@ background-color: CanvasText;
     width: 150%;
 }
 
+.test tr div label{
+    padding: -50px;
+}
 
 @media screen and (max-width: 768px){
     .navbar{
