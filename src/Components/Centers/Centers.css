@@ -104,3 +104,9 @@ table a:visited {
 .centersContainer {
   margin: 5%;
 }
+
+.centers-map {
+  padding: 5%;
+  width: 90%;
+  height: 100vh;
+}
