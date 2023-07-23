@@ -18,7 +18,7 @@ export default function CarouselComp() {
             autoPlay={true}
             dynamicHeight={false}
             stopOnHover={false}
-            width={"70%"}
+            width={"85%"}
             interval={4000}
         >
 
