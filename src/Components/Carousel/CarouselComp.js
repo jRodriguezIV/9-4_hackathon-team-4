@@ -19,7 +19,7 @@ export default function CarouselComp() {
             dynamicHeight={false}
             stopOnHover={false}
             width={"70%"}
-            interval={3000}
+            interval={4000}
         >
 
             <div key={"image1"}>

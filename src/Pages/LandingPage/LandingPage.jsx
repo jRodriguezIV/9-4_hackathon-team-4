@@ -1,6 +1,7 @@
 import {useEffect, useState} from 'react'
 import CarouselComp from "../../Components/Carousel/CarouselComp"
 import axios from 'axios'
+import "./LandingPage.css"
 
 const URL = process.env.REACT_APP_API_URL;
 const KEY = process.env.REACT_APP_API_KEY;
@@ -19,6 +20,12 @@ function LandingPage() {
   return (
     <div className="LandingPage">
       <CarouselComp />
+
+      <div className='textCard'>
+        <h3>
+        DISCOVER NEARBY LITERACY PROGRAMS AND SUPPORT.<br/><br/> OUR USER-FRIENDLY APP CONNECTS YOU WITH LOCATIONS FOR EASY ACCESS TO RESOURCES.<br/><br/>EMPOWERING COMMUNITIES THROUGH LITERACY.
+        </h3>
+      </div>
     </div>
   );
 }
