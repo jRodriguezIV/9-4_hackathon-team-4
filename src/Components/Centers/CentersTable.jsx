@@ -8,13 +8,61 @@ import {
   getFilteredRowModel,
   getPaginationRowModel,
 } from '@tanstack/react-table';
+import { HiPlay, HiStop } from 'react-icons/hi2'
 import "./Centers.css";
 
 function CentersTable({ data }) {
   const [sortBy, setSortBy] = useState([]);
   const [filterBy, setFilterBy] = useState("");
-
+  
   const columns = [
+    {
+      header: 'Audio',
+      cell: (info) => {    
+        const { id, service, divisionna, phonenumbe, address, city, zipcode } = info.row.original;
+        const phoneNum = `${phonenumbe.slice(1,4)}-${phonenumbe.slice(6)}`;
+        const infoArr = [
+          parseInt(id),
+          service,
+          divisionna,
+          phoneNum,
+          address,
+          city,
+          parseInt(zipcode),
+        ];
+
+        const startSpeech = () => {
+          for (let text of infoArr) {
+            const speech = new SpeechSynthesisUtterance();
+            speech.text = text;
+            speech.rate = 0.9;
+            window.speechSynthesis.speak(speech);
+          }
+        }
+
+        const stopSpeech = () => {
+          window.speechSynthesis.cancel();
+        }
+
+        return (
+          <div className='speech'>
+            <button
+              className='start'
+              onClick={() => startSpeech()}
+            >
+              <HiPlay />
+            </button>
+            &nbsp;
+            <button
+              className='stop'
+              onClick={() => stopSpeech()}
+            >
+              <HiStop />
+            </button>
+          </div>
+        )
+      },
+    },
     {
       header: 'ID',
       accessorKey: 'id',
@@ -47,7 +95,7 @@ function CentersTable({ data }) {
             {address}
           </a>
         )
-      }
+      },
     },
     { 
       header: 'City',
@@ -131,28 +179,24 @@ function CentersTable({ data }) {
       </table>
       <div className="table-buttons">
         <button
-          // style={{display: !table.getCanPreviousPage() ? 'none': 'inline-block'}}
           disabled={!table.getCanPreviousPage()}
           onClick={() => table.setPageIndex(0)}
         >
           First page
         </button>
         <button
-          // style={{display: !table.getCanPreviousPage() ? 'none': 'inline-block'}}
           disabled={!table.getCanPreviousPage()}
           onClick={() => table.previousPage()}
         >
           Previous page
         </button>
         <button
-          // style={{display: !table.getCanNextPage() ? 'none': 'inline-block'}}
           disabled={!table.getCanNextPage()}
           onClick={() => table.nextPage()}
         >
           Next page
         </button>
         <button
-          // style={{display: !table.getCanNextPage() ? 'none': 'inline-block'}}
           disabled={!table.getCanNextPage()}
           onClick={() => table.setPageIndex(table.getPageCount() - 1)}
         >
