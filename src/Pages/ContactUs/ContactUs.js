@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import axios from 'axios';
 import { useNavigate } from "react-router-dom";
-//const API = process.env.REACT_APP_API_URL;
 
 import "../ContactUs/ContactUs.css"
 
@@ -25,28 +23,15 @@ function ContactUs() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    //addContactInfo()
     handleClear();
   };
-
-  // const addContactInfo = () => {
-  //   axios
-  //     .post(`${API}/contact`, contactInfo) // Replace `/contact` with the actual API endpoint to handle contact form submissions
-  // .then(() => {
-  // Handle success (e.g., show a thank you message)
-  //   navigate('/thank-you'); // Replace this with the page where you want to redirect after form submission
-  // })
-  // .catch((error) => {
-  // Handle error (e.g., display an error message)
-  //   console.error("Error submitting contact form:", error);
-  // });
-  // }
 
   const handleClear = () => {
     setContactInfo({
       name: "",
       phone: "",
       email: "",
+      message: "",
       issue: "General Inquiry",
     });
   }
