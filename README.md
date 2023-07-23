@@ -1,10 +1,10 @@
 # 9-4_hackathon-team-4
 
 ## Figma Wireframe
-[Figma Wireframe](https://www.figma.com/file/keZQ8tNFoaDTLrjmMHCgcQ/Team-4---Project-Outline?type=whiteboard&node-id=0%3A1&t=mwdn9wrvj4xWefgy-1){:target="_blank"}
+[Figma Wireframe](https://www.figma.com/file/keZQ8tNFoaDTLrjmMHCgcQ/Team-4---Project-Outline?type=whiteboard&node-id=0%3A1&t=mwdn9wrvj4xWefgy-1)
 
 ## Trello Board
-[Trello Board](https://trello.com/b/Aaww8Be5/94-team-4-hackathon){:target="_blank"}
+[Trello Board](https://trello.com/b/Aaww8Be5/94-team-4-hackathon)
 
 
 ## Meet the Team
