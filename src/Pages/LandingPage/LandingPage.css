@@ -16,10 +16,14 @@
 
 .textCardPlayButton{
     background-color: #f7ad1991;
-    margin-left:80%;
+
 }
 
 .textCardPauseButton {
     background-color: #f7ad1991;
-    margin-left:100%;
+
+}
+
+button {
+    display: inline-block;
 }
