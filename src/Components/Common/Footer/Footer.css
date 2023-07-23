@@ -1,0 +1,25 @@
+.Footer {
+    background-color: #429EBD;
+    font-family: sans-serif;
+    padding: 10vh;
+    margin-top:15vh;
+}
+
+.footerText {
+    display: flex;
+    justify-content: center;
+    padding-left:15vh;
+
+}
+
+.footerContact {
+padding-top: 4vh
+}
+
+.footerImg {
+    width: 10%;
+}
+
+.footerAbout {
+    padding-top: 4vh
+}
