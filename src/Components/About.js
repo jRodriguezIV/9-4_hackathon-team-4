@@ -1,8 +1,7 @@
 
 import React from "react";
 import "./About.css";
-import githubLogo from "../assets/github.jpeg";
-import linkedinLogo from "..//assets/linkedin.png";
+import TeamMemberCard from "./TeamMemberCard";
 import JosephPhoto from "..//assets/Joseph.jpg"
 import RaydelysPhoto from "..//assets/Raydelys.jpg"
 import JinseokPhoto from "..//assets/Jinseok.jpg"
@@ -24,20 +23,18 @@ export default function About({ mode }) {
         {
             name: "Mark Roberston",
             photo: MarkPhoto,
-            bio: `I'm currently a Full Stack Web Development Fellow at Pursuit, a 12-month, Google-funded software engineering fellowship with a 9% acceptance rate. Besides coding, I enjoy movies, Formula 1 racing, music, travel, and spending time with my German Shepherd.
+            bio: `I'm currently a Full Stack Web Development Fellow at Pursuit, a 12-month, Google-funded software engineering fellowship with a 9% acceptance rate. I also enjoy movies, Formula 1, travel, and playing with my German Shepherd.
 
-            I'm excited to learn new languages like Python, C++, C#, etc., for personal and professional growth. My first personal project is designing a quantitative trading algorithm to run through an API to a trading platform.
-
-            I have experience in the financial markets and would enjoy working for a start-up or a large financial firm.`,
+            With financial markets experience and would enjoy working for a financial firm.`,
 
             github: "https://github.com/MarkRobertson67",
             linkedin: "https://www.linkedin.com/in/mark-robertson-ny-uk/",
         },
 
         {
-            name: "Raydelys Morrobel Reyes",
+            name: "Raydelys M. Reyes",
             photo: RaydelysPhoto,
-            bio: `Presently, I hold the title of a Full Stack Web Development Fellow at Pursuit, a prestigious 12-month software engineering fellowship with funding from Google. With an acceptance rate of just 9%, this program has produced successful graduates who secured positions as developers in prominent companies like Pinterest, JP Morgan, Citi, Spotify, and Blackstone.
+            bio: `Presently, I hold the title of a Full Stack Web Development Fellow at Pursuit, a prestigious 12-month software engineering fellowship with funding from Google. With an acceptance rate of just 9%.
 
            My ultimate goal is to become a skilled software engineer capable of tackling real-world challenges.`,
             github: "https://github.com/arerimr",
@@ -55,7 +52,7 @@ export default function About({ mode }) {
         {
             name: "Jacqueline Pasaoa",
             photo: jacquelinePhoto,
-            bio: `Jacqueline is full stack developer that studied under Pursuit. She underwent comprehensive training to master both front-end and back-end technologies. Throughout the program, she gained proficiency in various programming languages, databases, and frameworks to build complete web applications. She loves to travel, eat ice cream, and wants to learn more coding languages. And hopes to add more cities to travel to in the near future.`,
+            bio: `Jacqueline is full stack developer that studied under Pursuit. She underwent comprehensive training to master both front-end and back-end technologies. She loves to travel, eat ice cream, and wants to learn more coding languages. And hopes to add more cities to travel to in the near future.`,
             github: "https://github.com/jkpasaoa",
             linkedin: "https://www.linkedin.com/in/jacquelinepasaoa/",
         },
@@ -67,7 +64,7 @@ export default function About({ mode }) {
             <br />
 
             <div className="about"><br /><br />
-                <h1 style={{ fontWeight: 'bold' }}>About Our Project</h1>
+                <h1 style={{ fontWeight: 'bold' }}>About the App: Access & Learn</h1>
 
                 <br />
                 {/* <div className="scribe">
@@ -83,82 +80,40 @@ export default function About({ mode }) {
                 </div><br /> */}
 
                 <p>
-                    Introducing "Our ACCESS APP: The Ultimate APP for people to gain acccess"
+                Overview:
+                Access & Learn is a mobile application designed to provide support and resources for undereducated individuals in New York. The app aims to help these individuals overcome literacy challenges and empower them to gain the education they need. Additionally, the app offers a dyslexia test and features tailored to accommodate users with dyslexia, ensuring an inclusive experience for all users.    
+                </p>
+                <p>
+                Features:
 
-                    Its a great App
+                Literacy Program Locations: Access & Learn provides a comprehensive list of literacy program locations in New York. These centers offer various educational services to help users enhance their literacy skills. The app fetches this information from an external API using Axios and displays it in a user-friendly table format. Users can easily access details such as location, contact information, and services provided by each center.
+
+                Dyslexia Test: The app includes a dyslexia test to identify potential dyslexia in users. This test is designed to assess reading and language skills and can help users determine if they might have dyslexia. Early detection of dyslexia can lead to timely intervention and support, enabling users to overcome the challenges associated with the condition.
+
+                Text Converter: Access & Learn features a text converter tool, which allows users to convert text into a dyslexia-friendly format. This feature includes options like changing fonts, adjusting spacing, or using specific color schemes to enhance readability for individuals with dyslexia.
+
+                Accessibility: The app places a strong emphasis on accessibility, making it easier for users with dyslexia and other learning differences to use the application effectively. The "Accessibility" button provides additional settings or options that users can customize according to their needs, such as font size adjustments, text-to-speech capabilities, and color contrast choices.
                 </p>
                 <p>
-                    Best App ever
+                Mission:
+                The mission of Access & Learn is to break barriers to education and improve literacy among undereducated individuals in New York. By providing a user-friendly platform with comprehensive literacy program information and dyslexia support, the app aims to create an inclusive learning environment and empower users to enhance their skills, pursue opportunities, and lead fulfilling lives.
                 </p>
                 <p>
-                    The front-end of our application is built on React, offering a seamless and intuitive interface for browsing, exploring.
-                </p>
-                <p>
-                    No back-end.
-                </p>
-                <p>
-                    Some blurb
-                </p>
-                <p>
-                    Some more blurb
-                </p>
-                <p>
-                    Final blurb
+                About the Developers:
+                The Access & Learn app was developed by a team of passionate individuals who believe in the transformative power of education. Our team is committed to promoting equal access to education for all, and we strive to make a positive impact on the lives of underprivileged individuals through technology.
                 </p>
                 <em><p>(Please see readme.md for additional information)</p></em>
 
             </div>
 
             <div className="team">
-                <h1>Meet the Team</h1>
-                <div className="team-members">
-                    {teamMembers.map((member, index) => (
-                        <div key={index} className="member-card">
-                            <h3>{member.name}</h3>
-                            <div style={{ display: 'flex', justifyContent: 'center' }}>
-                                <img
-                                    src={member.photo}
-                                    alt={member.name}
-                                    style={{
-                                        width: '250px',
-                                        height: '300px',
-                                        borderRadius: '50%', // Creates an oval shape
-                                        objectFit: 'cover', // Maintain aspect ratio and cover entire area
-                                    }}
-                                />
-                            </div>
-
-                            <p>{member.bio}</p>
-                            <div className="links-container">
-                                <div className="github-container">
-                                    <a href={member.github} target="_blank" rel="noopener noreferrer">
-                                        <img src={githubLogo} alt="GitHub Logo" width={60} h />
-                                    </a>
-                                </div>
-
-                                <div className="linkedin-container">
-                                    <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
-                                        <img src={linkedinLogo} alt="LinkedIn Logo" width={60} />
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-                    ))}
-                </div>
-
-                <div className="wireframe">
-                    <a href="https://www.figma.com/file/keZQ8tNFoaDTLrjmMHCgcQ/Team-4---Project-Outline?type=whiteboard&node-id=0%3A1&t=mwdn9wrvj4xWefgy-1" target="_blank" rel="noopener noreferrer">
-                        <h1>Figma Wireframe</h1>
-                    </a>
-                </div>
-
-                <div className="trello-board">
-                    <a href="https://trello.com/b/Aaww8Be5/94-team-4-hackathon" target="_blank" rel="noopener noreferrer">
-                        <h1>Trello Board</h1>
-                    </a>
-                </div>
-            </div>
+        <h1>Meet the Team</h1>
+        <div className="team-members">
+          {teamMembers.map((member, index) => (
+            <TeamMemberCard key={index} member={member} />
+          ))}
         </div>
-    );
+      </div>
+    </div>
+  );
 }
