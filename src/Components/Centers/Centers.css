@@ -3,7 +3,6 @@
   font-size: 120%;
   letter-spacing: 2px;
   padding: 20px;
-  
 }
 
 table {
@@ -42,4 +41,10 @@ tbody tr {
 
 .speech button {
   background-color: #f7ad1991;
+}
+
+.centers-map {
+  padding: 5%;
+  width: 90%;
+  height: 100vh;
 }
