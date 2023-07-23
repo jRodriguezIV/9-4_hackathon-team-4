@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { HiPlay, HiStop } from 'react-icons/hi2'
 
 export default function TestComponent() {
@@ -76,18 +76,9 @@ export default function TestComponent() {
         console.log(counter)
     }
 
-    const displayResult = () => {
-        if (counter >= 7) {
-            setResult(`Based on this results you have dyslexia. Next steps: review our resources and literacy help centers, you're not alone🫶🏽`)
-        } else {
-            setResult(`Based on this results you don't have dyslexia. Please consult an specialist for a concrete diagnostic!`)
-        }
-    }
-
     const handleSubmit = (e) => {
         e.preventDefault()
         counterFunc()
-        displayResult()
         setSubmit(true)
     }
 
@@ -215,7 +206,7 @@ export default function TestComponent() {
             </form>
             <section className="results">
                 {
-                    submitted ? <p><h3>Chance of Dyslexia: {counter * 10}% </h3><p>{result}</p></p> : <p>Submit to view results</p>
+                    submitted ? <p><h3>Chance of Dyslexia: {counter * 10}% </h3><p>{(counter >= 7) ? `Based on this results you have dyslexia. \n Next steps: review our resources and literacy help centers, you're not alone🫶🏽` : `Based on this results you don't have dyslexia. Please consult an specialist for a concrete diagnostic!`}</p></p> : <p>Submit to view results</p>
                 }
             </section>
         </div>
