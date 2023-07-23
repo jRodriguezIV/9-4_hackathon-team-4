@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import "../ContactUs/ContactUs.css"
 
@@ -24,8 +24,13 @@ function ContactUs() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // handleClear();
-    setSubmitted(true)
+
+    if (window.confirm(" Thank you for your message! Please allow time for our services to process it and to get back to you.")) {
+      setSubmitted(true)
+      navigate('/home');
+    } else {
+      setSubmitted(false);
+    }
   };
 
   const handleClear = () => {
@@ -43,7 +48,7 @@ function ContactUs() {
       <h2>Contact Us!</h2>
       {submitted ? ( // Show the thank-you message if the form is submitted
         <p style={{ maxWidth: '500px', margin: '0 auto', paddingTop: '50px' }}>
-          Thank you for your message! Please allow time for our services to process it and to get back to you.
+          <h3>Go back to <Link to='/home'>Home</Link></h3>
         </p>
       ) : (
         // Show the form if the form is not submitted
