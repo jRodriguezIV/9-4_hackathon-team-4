@@ -20,9 +20,8 @@ function App() {
         <Navbar />
         <main>
           <Routes>
-            <Route path="/" element={<LandingPage />} />
+            <Route path="/home" element={<LandingPage />} />
             <Route path="/centers" element={<Centers />} />
-
             <Route path="/contact" element={<ContactUs />} />
             <Route path="/about" element={<About />} />
             <Route path="/test" element={<TestComponent />} />
