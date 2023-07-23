@@ -14,7 +14,12 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.695);
 }
 
-.textCardButton {
+.textCardPlayButton{
+    background-color: #f7ad1991;
+    margin-left:80%;
+}
+
+.textCardPauseButton {
     background-color: #f7ad1991;
     margin-left:100%;
 }

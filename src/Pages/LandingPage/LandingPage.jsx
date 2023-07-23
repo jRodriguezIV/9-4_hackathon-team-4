@@ -10,6 +10,7 @@ let speech = new SpeechSynthesisUtterance();
 
 function LandingPage() {
   const [info, setInfo] = useState([])
+  const [play, setPlay] = useState(true)
 
   useEffect(() => {
     axios
@@ -25,14 +26,19 @@ function LandingPage() {
     window.speechSynthesis.speak(speech)
   }
 
+  let speechPause = () => {
+    window.speechSynthesis.cancel()
+  }
+
   return (
     <div className="LandingPage">
       <CarouselComp />
 
       <div className='textCard'>
-        <button className='textCardButton' onClick={textToSpeech}>🔊</button>
         <h3>
         DISCOVER NEARBY LITERACY PROGRAMS AND SUPPORT.<br/><br/> OUR USER-FRIENDLY APP CONNECTS YOU WITH LOCATIONS FOR EASY ACCESS TO RESOURCES.<br/><br/>EMPOWERING COMMUNITIES THROUGH LITERACY.
+        <button className='textCardPlayButton' onClick={() => textToSpeech()}>🔊</button>
+        <button className='textCardPauseButton' onClick={() => speechPause()}>⏹️</button>
         </h3>
       </div>
     </div>
