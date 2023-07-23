@@ -1,0 +1,55 @@
+.tag {
+    text-align: center;
+    color: green;
+    margin: 2rem;
+}
+
+.puzzle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5%;
+    text-align: center;
+}
+
+.jigsaw-puzzle {
+    width: 100%;
+    height: 100%;
+    height: auto;
+    border: none;
+    margin: auto;
+    box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.25);
+}
+
+.puzzle img {
+    width: 100%;
+    height: 110%;
+    height: auto;
+    border: none;
+    margin: auto;
+    box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.25);
+}
+
+.puzzle button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d3d3d3;
+    width: 50%;
+    height: 70px;
+    margin-left: 25%;
+}
+
+.puzzle a {
+    text-decoration: none;
+    color: black;
+    font-size: xx-large;
+    font-weight: bolder;
+    margin-top: 3%;
+}
+
+.puzzle button:hover,
+.puzzle a:hover {
+    background-color: #11224D;
+    color: #F7AD19;
+}

@@ -10,9 +10,11 @@ import Centers from './Components/Centers/Centers.jsx';
 import ContactUs from './Pages/ContactUs/ContactUs';
 import About from './Components/About';
 import TestComponent from './Components/TestComponent/TestComponent';
+import Splash from './Pages/SplashPage/SplashPage';
 
 
 function App() {
+  
   return (
     <div className="App">
 
@@ -20,6 +22,7 @@ function App() {
         <Navbar />
         <main>
           <Routes>
+            <Route path="/" element={<Splash />} />
             <Route path="/home" element={<LandingPage />} />
             <Route path="/centers" element={<Centers />} />
             <Route path="/contact" element={<ContactUs />} />
