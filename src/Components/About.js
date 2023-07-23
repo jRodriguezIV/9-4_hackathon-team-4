@@ -67,42 +67,42 @@ export default function About({ mode }) {
                 <h1 style={{ fontWeight: 'bold' }}>About the App: Access & Learn</h1>
 
                 <br />
-                {/* <div className="scribe">
-                <a href="https://scribehow.com/shared/How_to_use_the_Luxury_Rides_App__Sg9wWxUdQMW3_RqAsx6OJQ" target="_blank" rel="noopener noreferrer">
-                <h1 style={{ fontSize: '20px' }}>Click here to learn how to use this App</h1>
-                </a>
-                </div><br /> */}
-
-                {/* <div className="AiGirl">
-                <a href="https://app.hourone.ai/player/1e279eef158e41c3a9ec67a381841bce" target="_blank" rel="noopener noreferrer">
-                <h1 style={{ fontSize: '20px' }}>Too busy to read? Click here and my assistant will describe the App to you.</h1>
-                </a>
-                </div><br /> */}
 
                 <p>
                 Overview:
-                Access & Learn is a mobile application designed to provide support and resources for undereducated individuals in New York. The app aims to help these individuals overcome literacy challenges and empower them to gain the education they need. Additionally, the app offers a dyslexia test and features tailored to accommodate users with dyslexia, ensuring an inclusive experience for all users.    
+                </p>
+                <p>
+                Access & Learn is a mobile application designed to provide support to those suffering from Dyslexia in addition to literacy resources for individuals in New York. The app aims to help these individuals overcome literacy challenges and empower them to gain the education they need. Additionally, the app offers a dyslexia test and features tailored to accommodate users with dyslexia, ensuring an inclusive experience for all users.    
                 </p>
                 <p>
                 Features:
-
+                </p>
+                <p>
                 Literacy Program Locations: Access & Learn provides a comprehensive list of literacy program locations in New York. These centers offer various educational services to help users enhance their literacy skills. The app fetches this information from an external API using Axios and displays it in a user-friendly table format. Users can easily access details such as location, contact information, and services provided by each center.
-
-                Dyslexia Test: The app includes a dyslexia test to identify potential dyslexia in users. This test is designed to assess reading and language skills and can help users determine if they might have dyslexia. Early detection of dyslexia can lead to timely intervention and support, enabling users to overcome the challenges associated with the condition.
-
-                Text Converter: Access & Learn features a text converter tool, which allows users to convert text into a dyslexia-friendly format. This feature includes options like changing fonts, adjusting spacing, or using specific color schemes to enhance readability for individuals with dyslexia.
-
-                Accessibility: The app places a strong emphasis on accessibility, making it easier for users with dyslexia and other learning differences to use the application effectively. The "Accessibility" button provides additional settings or options that users can customize according to their needs, such as font size adjustments, text-to-speech capabilities, and color contrast choices.
+                </p>
+                <p>
+                Dyslexia Test: 
+                </p>
+                <p>The app includes a dyslexia test to identify potential dyslexia in users. This test is designed to assess reading and language skills and can help users determine if they might have dyslexia. Early detection of dyslexia can lead to timely intervention and support, enabling users to overcome the challenges associated with the condition.
+                </p>
+                
+                <p>
+                Accessibility: 
+                </p>
+                <p>The app places a strong emphasis on accessibility, making it easier for users with dyslexia and other learning differences to use the application effectively. We have implemented a text to speach so that users with a veriety of chalenges are able to read the content on the page.
                 </p>
                 <p>
                 Mission:
-                The mission of Access & Learn is to break barriers to education and improve literacy among undereducated individuals in New York. By providing a user-friendly platform with comprehensive literacy program information and dyslexia support, the app aims to create an inclusive learning environment and empower users to enhance their skills, pursue opportunities, and lead fulfilling lives.
+                </p>
+                <p>
+                The mission of Access & Learn is to break barriers to education and improve literacy of individuals in New York in need of assistance. By providing a user-friendly platform with comprehensive literacy program information and dyslexia support, the app aims to create an inclusive learning environment and empower users to enhance their skills, pursue opportunities, and lead fulfilling lives.
                 </p>
                 <p>
                 About the Developers:
-                The Access & Learn app was developed by a team of passionate individuals who believe in the transformative power of education. Our team is committed to promoting equal access to education for all, and we strive to make a positive impact on the lives of underprivileged individuals through technology.
                 </p>
-                <em><p>(Please see readme.md for additional information)</p></em>
+                <p>
+                The Access & Learn app was created by a team of dedicated individuals who firmly believe in the profound impact of education on people's lives. Our team is committed to fostering literacy and empowering individuals with dyslexia through accessible and innovative technology. By focusing on enhancing literacy skills and providing dyslexia support, we aim to make a significant difference in the lives of those seeking to overcome educational challenges.
+                </p>
 
             </div>
 

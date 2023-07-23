@@ -1,16 +1,45 @@
 
-div h1 {
-  text-align: center;
+.table-setion {
+  font-size: 120%;
+  letter-spacing: 2px;
+  padding: 20px;
+  
 }
 
-.centers-table {
-  table-layout: fixed;
-  width: 80%;
+table {
+  font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
   border-collapse: collapse;
+  width: 100%;
+  height: 300px;
 }
 
-.center-table-row {
-  border: 1px solid #dddddd;
-  text-align: center;
+table td,
+table th {
+  border: 1px solid #ddd;
   padding: 8px;
+}
+
+.table-setion table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table tr:hover {
+  background-color: #ddd;
+}
+
+table th, tfoot td {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #d4971e;
+  color: white;
+}
+
+tbody tr {
+  font-size: 150%;
+  height: 130px;
+}
+
+.speech button {
+  background-color: #f7ad1991;
 }
