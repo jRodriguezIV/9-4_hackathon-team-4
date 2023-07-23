@@ -12,7 +12,18 @@
     border-radius: 20px;
     box-shadow: 0 4px 8px rgb(0, 0, 0);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.695);
+}
 
+.textCardPlayButton{
+    background-color: #f7ad1991;
 
+}
 
+.textCardPauseButton {
+    background-color: #f7ad1991;
+
+}
+
+button {
+    display: inline-block;
 }
