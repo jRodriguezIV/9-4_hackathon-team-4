@@ -2,6 +2,8 @@
 .table-setion {
   font-size: 120%;
   letter-spacing: 2px;
+  padding: 20px;
+  
 }
 
 table {
@@ -34,5 +36,10 @@ table th, tfoot td {
 }
 
 tbody tr {
-  height: 70px;
+  font-size: 150%;
+  height: 130px;
+}
+
+.speech button {
+  background-color: #f7ad1991;
 }
