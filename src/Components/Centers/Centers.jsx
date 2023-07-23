@@ -18,7 +18,7 @@ function Centers() {
   }, [])
 
   return (
-    <div>
+    <div className="centersContainer">
       <h1>Literacy Program Locations</h1>
       <CentersTable data={data} />
     </div>

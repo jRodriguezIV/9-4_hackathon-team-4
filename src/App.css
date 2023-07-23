@@ -8,3 +8,16 @@ body {
   background-color: #333;
   color: #fff;
 }
+
+.dark table tr:nth-child(even) {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark table a {
+  color: #9FE7F5;
+}
+
+.dark table a:hover {
+  color: #F98125;
+}
