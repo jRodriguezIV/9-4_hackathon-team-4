@@ -3,3 +3,8 @@ body {
   color: #11224D;
   margin-top: 10%;
 }
+
+.dark {
+  background-color: #333;
+  color: #fff;
+}

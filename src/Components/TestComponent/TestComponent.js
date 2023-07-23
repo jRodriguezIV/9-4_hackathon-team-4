@@ -88,15 +88,14 @@ export default function TestComponent() {
         e.preventDefault()
         counterFunc()
         displayResult()
-        setSubmit(!submitted)
+        setSubmit(true)
     }
 
     return (
         <div className="test">
-            <form onSubmit={handleSubmit}>
+            <form>
                 <h1>Dyslexia Test</h1>
                 <p>Select the checkbox if your answer to the question is <strong>"yes"</strong>.</p>
-                <p>Hover over question for enhanced reading.</p>
                 <div>
                     <input
                         className="check"
@@ -208,7 +207,8 @@ export default function TestComponent() {
                     &nbsp;<button className='textCardPlayButton' onClick={() => textToSpeech('Do you avoid work projects or courses that require extensive reading?')}><HiPlay /></button>&nbsp;<button className='textCardPauseButton' onClick={() => speechPause()}><HiStop /></button>
                 </div>
                 <section className="buttons">
-                    <input type="submit" className='submit' value='SUBMIT' />
+                    {/* <input type="submit" className='submit' value='SUBMIT' /> */}
+                    <button onClick={handleSubmit}>SUBMIT</button>
                     <br />
                     <input type="reset" value='CLEAR' />
                 </section>
