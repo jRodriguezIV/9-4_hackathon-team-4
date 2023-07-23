@@ -9,43 +9,44 @@ import image4 from "../../../src/assets/Carousel4.jpg"
 export default function CarouselComp() {
 
     return (
+        <div className='CarouselContainer'>
         <Carousel
             autoFocus={true}
             showThumbs={false}
-            showArrows={true}
+            showArrows={false}
             infiniteLoop={true}
             autoPlay={true}
-            interval={2000}
+            dynamicHeight={false}
+            stopOnHover={false}
+            width={"70%"}
+            interval={3000}
         >
 
             <div key={"image1"}>
                 <img 
                   src={image1}
                   alt={"image1"}
-                  style={{ height: "50%"}}
                   />
             </div>
             <div key={"image2"}>
                 <img 
                   src={image2}
                   alt={"image2"}
-                  style={{minHeight: "auto"}}
                  />
             </div>
             <div key={"image3"}>
                 <img 
                   src={image3}
                   alt={"image3"}
-                  style={{minHeight: "auto"}}
                  />
             </div>
             <div key={"image4"}>
                 <img 
                   src={image4}
                   alt={"image4"}
-                  style={{minHeight: "auto"}}
                   />
             </div>
         </Carousel>
+        </div>
     )
 }
