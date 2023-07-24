@@ -7,6 +7,7 @@
   font-size: 120%;
   letter-spacing: 2px;
   font-family: 'Roboto', sans-serif;
+  padding-top: 50px;
 }
 
 .ContactUs label {
@@ -39,4 +40,16 @@
   font-size: 120%;
   letter-spacing: 2px;
   font-family: 'Roboto', sans-serif;
+}
+
+@media(max-width:767px) {
+  .NewContact {
+    scale: 90%;
+    padding-top: 0%;
+    font-size: 90%;
+  }
+
+  main {
+    margin-top:calc(-6vh)
+  }
 }
