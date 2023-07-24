@@ -116,3 +116,35 @@ table a:visited {
   width: 90%;
   height: 100vh;
 }
+
+@media(max-width:767px){
+
+  .table-section{
+    overflow: scroll;
+    font-size:100%;
+    padding-left: 0;
+    margin-left: 0;
+
+  }
+
+  table {
+    overflow: scroll;
+    height: 300px;
+    margin: 0.5%;
+    margin-top: 2%;
+    margin-bottom: 4%;
+  }
+
+  table td, table th {
+    padding: 4px;
+  }
+
+  tbody tr {
+    font-size: 80%;
+    height: 100px;
+  }
+
+  .centersContainer {
+    margin-right:1%;
+  }
+}
