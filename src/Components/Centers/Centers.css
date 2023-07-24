@@ -46,6 +46,7 @@ tbody tr {
   background-color: #f7ad1991;
 }
 
+
 .table-filter input {
   background-color: #d3d3d3;
   border: 2px solid #11224D;
@@ -105,8 +106,3 @@ table a:visited {
   margin: 5%;
 }
 
-.centers-map {
-  padding: 5%;
-  width: 90%;
-  height: 100vh;
-}
