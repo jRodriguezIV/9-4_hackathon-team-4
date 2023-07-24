@@ -1,5 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useState } from 'react';
 
 import Navbar from './Components/Common/NavBar/NavBar';
 import Footer from './Components/Common/Footer/Footer.jsx';
@@ -14,12 +15,21 @@ import Splash from './Pages/SplashPage/SplashPage';
 
 
 function App() {
+  const [theme, setTheme] = useState('light')
+
+  const toggleTheme = () =>{
+    if(theme === 'light'){
+      setTheme('dark')
+    } else{
+      setTheme('light')
+    }
+  }
   
   return (
-    <div className="App">
+    <div className={`App ${theme}`}>
 
       <Router>
-        <Navbar />
+        <Navbar toggleTheme={toggleTheme} theme={theme}/>
         <main>
           <Routes>
             <Route path="/" element={<Splash />} />

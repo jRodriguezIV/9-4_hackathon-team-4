@@ -20,7 +20,8 @@ function Centers() {
   }, [])
 
   return (
-    <div className="center">
+
+    <div className="centersContainer">
       <h1>Literacy Program Locations</h1>
       <CentersTable data={data} />
       <CentersMap data={data} />
