@@ -44,7 +44,7 @@ function ContactUs() {
   }
 
   return (
-    <div className="NewContact" style={{ maxWidth: '500px', margin: '0 auto', paddingTop: '50px' }}>
+    <div className="NewContact" style={{ maxWidth: '500px', margin: '0 auto' }}>
       <h2>Contact Us!</h2>
       {submitted ? ( // Show the thank-you message if the form is submitted
         <p style={{ maxWidth: '500px', margin: '0 auto', paddingTop: '50px' }}>
