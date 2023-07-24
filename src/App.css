@@ -14,8 +14,16 @@ body {
   color: #fff;
 }
 
-.dark table a {
+.dark table tr:hover {
+  background-color: #ffffff50;
+}
+
+.dark table a:visited {
   color: #9FE7F5;
+}
+
+.dark table a {
+  color: #fff;
 }
 
 .dark table a:hover {
