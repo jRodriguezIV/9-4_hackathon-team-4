@@ -100,7 +100,7 @@ body {
   display: inline-block;
   /* background-color: #007bff; */
   color: #fff;
-  padding: 10px 20px;
+  /* padding: 0px 20px; */
   border-radius: 5px;
   text-decoration: none;
 }
@@ -117,7 +117,7 @@ body {
 
 .github-logo {
   margin-top: 10px;
-  padding-top: 10px;
+  /* padding-top: 10px; */
   scale: 2.5;
   color:black
 }
