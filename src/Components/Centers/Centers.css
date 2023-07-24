@@ -1,5 +1,6 @@
 body {
-  margin: 120px 20px; /* Adjust the value of 20px to increase or decrease the margin as needed */
+  margin: 120px auto;
+  /* Adjust the value of 20px to increase or decrease the margin as needed */
 }
 
 
