@@ -1,0 +1,108 @@
+.table-setion {
+  font-size: 120%;
+  letter-spacing: 2px;
+  padding: 20px;
+}
+
+table {
+  font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  height: 300px;
+  margin: 0.5%;
+  margin-top: 2%;
+  margin-bottom: 4%;
+}
+
+table td,
+table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table tr:hover {
+  background-color: #ddd;
+}
+
+table th,
+tfoot td {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #d4971e;
+  color: white;
+}
+
+tbody tr {
+  font-size: 150%;
+  height: 130px;
+}
+
+.speech button {
+  background-color: #f7ad1991;
+}
+
+
+.table-filter input {
+  background-color: #d3d3d3;
+  border: 2px solid #11224D;
+  color: #11224D;
+  height: 30px;
+}
+
+.table-filter input:hover {
+  background-color: #11224D;
+  color: #d3d3d3;
+}
+
+.table-buttons {
+  display: flex;
+  align-items: center;
+  margin-left: 34%;
+  margin-bottom: 3%;
+}
+
+.table-buttons button {
+  background-color: #d3d3d3;
+  border: 2px solid #11224D;
+  margin: .5%;
+  border-radius: 45%;
+  padding: 1%;
+  /* color: #11224D; */
+  font-weight: bold;
+}
+
+.table-buttons button:hover {
+  background-color: #11224D;
+  color: #d4971e;
+}
+
+table a {
+  color: #2C599D;
+}
+
+table a:hover {
+  color: #F98125;
+}
+
+table a:visited {
+  color: gray;
+}
+
+.table-filter label {
+  margin: 1%;
+  font-size: large;
+}
+
+.centersContainer h1 {
+  margin-left: 1%;
+}
+
+.centersContainer {
+  margin: 5%;
+}
+

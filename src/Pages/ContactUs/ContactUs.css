@@ -1,0 +1,42 @@
+.ContactUs {
+  display: flex;
+  flex-direction: column;
+}
+
+.NewContact {
+  font-size: 120%;
+  letter-spacing: 2px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.ContactUs label {
+  margin-bottom: 10px;
+  font-size: 120%;
+  letter-spacing: 2px;
+  /* font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif; */
+}
+
+.form-control {
+  font-family: 'Roboto', sans-serif;
+  font-size: 120%;
+  letter-spacing: 2px;
+}
+
+.ContactUs input,
+.ContactUs select {
+  padding: 5px;
+  margin-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* .form-select {
+  font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+} */
+
+.custom-button {
+  font-size: 12px;
+  padding: 5px 5px;
+  font-size: 120%;
+  letter-spacing: 2px;
+  font-family: 'Roboto', sans-serif;
+}
