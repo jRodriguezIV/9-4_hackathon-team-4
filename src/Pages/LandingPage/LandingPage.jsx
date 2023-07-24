@@ -1,13 +1,10 @@
-import CarouselComp from "../../Components/Carousel/CarouselComp"
-import { HiPlayPause, HiStop } from 'react-icons/hi2'
-import { HiPlayPause, HiStop } from 'react-icons/hi2'
-import "./LandingPage.css"
+import CarouselComp from "../../Components/Carousel/CarouselComp";
+import { HiPlayPause, HiStop } from 'react-icons/hi2';
+import "./LandingPage.css";
 
 
 function LandingPage() {
 
-  let speech = new SpeechSynthesisUtterance();
-  let synth = window.speechSynthesis;
 
   let speech = new SpeechSynthesisUtterance();
   let synth = window.speechSynthesis;
@@ -16,10 +13,6 @@ function LandingPage() {
   if(!synth.speaking && !synth.paused) {
     speech.text = "DISCOVER NEARBY LITERACY PROGRAMS AND SUPPORT."
     speech.rate = 0.75
-    synth.speak(speech)
-  } else {
-    synth.paused ? synth.resume() : synth.pause();
-  }
     synth.speak(speech)
   } else {
     synth.paused ? synth.resume() : synth.pause();
