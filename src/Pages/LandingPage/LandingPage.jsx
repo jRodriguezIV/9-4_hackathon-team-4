@@ -1,25 +1,10 @@
-import {useEffect, useState} from 'react'
 import CarouselComp from "../../Components/Carousel/CarouselComp"
 import { HiPlay, HiStop } from 'react-icons/hi2'
-import axios from 'axios'
 import "./LandingPage.css"
 
-const URL = process.env.REACT_APP_API_URL;
-const KEY = process.env.REACT_APP_API_KEY;
 let speech = new SpeechSynthesisUtterance();
 
-
 function LandingPage() {
-  const [info, setInfo] = useState([])
-  const [play, setPlay] = useState(true)
-
-  useEffect(() => {
-    axios
-    .get(`${URL}/${KEY}`)
-    .then((response) => setInfo(response.data))
-    .catch((error) => console.warn("fetch error", error))
-  }, [])
-  console.log(info)
 
  let textToSpeech1 = () => {
     speech.text = "DISCOVER NEARBY LITERACY PROGRAMS AND SUPPORT."

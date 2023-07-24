@@ -6,7 +6,6 @@ export default function TestComponent() {
 
     const [submitted, setSubmit] = useState(false)
     const [counter, setCounter] = useState(0)
-    const [result, setResult] = useState('')
     const [test, setTest] = useState({
         readSlowly: false,
         troubleReading: false,
@@ -76,27 +75,17 @@ export default function TestComponent() {
         console.log(counter)
     }
 
-    const displayResult = () => {
-        if (counter >= 7) {
-            setResult(`Based on this results you have dyslexia. Next steps: review our resources and literacy help centers, you're not alone🫶🏽`)
-        } else {
-            setResult(`Based on this results you don't have dyslexia. Please consult an specialist for a concrete diagnostic!`)
-        }
-    }
-
     const handleSubmit = (e) => {
         e.preventDefault()
         counterFunc()
-        displayResult()
-        setSubmit(!submitted)
+        setSubmit(true)
     }
 
     return (
         <div className="test">
-            <form onSubmit={handleSubmit}>
+            <form>
                 <h1>Dyslexia Test</h1>
                 <p>Select the checkbox if your answer to the question is <strong>"yes"</strong>.</p>
-                <p>Hover over question for enhanced reading.</p>
                 <div>
                     <input
                         className="check"
@@ -208,14 +197,15 @@ export default function TestComponent() {
                     &nbsp;<button className='textCardPlayButton' onClick={() => textToSpeech('Do you avoid work projects or courses that require extensive reading?')}><HiPlay /></button>&nbsp;<button className='textCardPauseButton' onClick={() => speechPause()}><HiStop /></button>
                 </div>
                 <section className="buttons">
-                    <input type="submit" className='submit' value='SUBMIT' />
+                    {/* <input type="submit" className='submit' value='SUBMIT' /> */}
+                    <button onClick={handleSubmit}>SUBMIT</button>
                     <br />
                     <input type="reset" value='CLEAR' />
                 </section>
             </form>
             <section className="results">
                 {
-                    submitted ? <p><h3>Chance of Dyslexia: {counter * 10}% </h3><p>{result}</p></p> : <p>Submit to view results</p>
+                    submitted ? <p><h3>Chance of Dyslexia: {counter * 10}% </h3><p>{(counter >= 7) ? `Based on this results you have dyslexia. \n Next steps: review our resources and literacy help centers, you're not alone🫶🏽` : `Based on this results you don't have dyslexia. Please consult an specialist for a concrete diagnostic!`}</p></p> : <p>Submit to view results</p>
                 }
             </section>
         </div>
