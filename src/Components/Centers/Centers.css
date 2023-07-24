@@ -1,12 +1,10 @@
-<<<<<<< HEAD
 body {
-  margin: 120px 20px; /* Adjust the value of 20px to increase or decrease the margin as needed */
+  margin: 120px auto;
+  /* Adjust the value of 20px to increase or decrease the margin as needed */
 }
 
 
-=======
->>>>>>> dev
-.table-setion {
+.table-section {
   font-size: 120%;
   letter-spacing: 2px;
   padding: 20px;
