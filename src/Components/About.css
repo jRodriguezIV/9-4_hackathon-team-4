@@ -114,3 +114,16 @@ body {
               0 12px 36px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
 }
+
+.github-logo {
+  margin-top: 10px;
+  padding-top: 10px;
+  scale: 2.5;
+  color:black
+}
+
+.github-logo:hover {
+outline:5px;
+
+}
+

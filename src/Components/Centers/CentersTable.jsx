@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import {
   useReactTable,
@@ -10,6 +9,7 @@ import {
 } from '@tanstack/react-table';
 import { HiPlay, HiStop } from 'react-icons/hi2'
 import "./Centers.css";
+
 
 function CentersTable({ data }) {
   const [sortBy, setSortBy] = useState([]);
