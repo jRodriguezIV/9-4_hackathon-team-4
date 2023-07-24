@@ -1,6 +1,7 @@
 import React from "react";
-import githubLogo from "../assets/github.jpeg";
+import {GrGithub} from "react-icons/gr"
 import linkedinLogo from "../assets/linkedin.png";
+import './About.css'
 
 export default function TeamMemberCard({ member }) {
   return (
@@ -22,8 +23,12 @@ export default function TeamMemberCard({ member }) {
       <p>{member.bio}</p>
       <div className="links-container">
         <div className="github-container">
-          <a href={member.github} target="_blank" rel="noopener noreferrer">
-            <img src={githubLogo} alt="GitHub Logo" width={40} />
+          <a href={member.github} target="_blank" rel="noopener noreferrer" className="github-logo">
+            {/* <img src={} alt="GitHub Logo" width={40} /> */}
+
+            <GrGithub/>
+           
+
           </a>
         </div>
 
