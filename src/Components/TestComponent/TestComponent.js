@@ -90,6 +90,7 @@ export default function TestComponent() {
 
     const handleClear = () => {
         setSubmit(false)
+        window.location.reload();
     }
 
     return (
