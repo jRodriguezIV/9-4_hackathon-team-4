@@ -1,6 +1,5 @@
 import "./NavBar.css"
 import logo from './Assets/logo.PNG'
-import ax from './Assets/access.PNG'
 import { Link } from "react-router-dom"
 import { useLocation } from "react-router-dom"
 import { MdOutlineDarkMode } from 'react-icons/md';
