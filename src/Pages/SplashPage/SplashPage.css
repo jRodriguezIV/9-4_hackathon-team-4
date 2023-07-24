@@ -86,14 +86,23 @@
     }
 
     .logoImg {
-        scale:.8;
+        scale:.90;
     }
 
     .topBar {
         margin-left: 1vh;
+        margin-top: 10vh;
     }
 
     .puzzle h1 {
         font-size: 160%;
+    }
+
+    .puzzle {
+        margin-top: 10vh;
+    }
+
+    .puzzle h3 {
+        font-size: 90%;
     }
 }
