@@ -78,7 +78,10 @@
     display: flex;
     margin-top: 2%;
     margin-bottom: 1%;
+}
 
+.test form div .buttonContainer {
+    margin-top:0;
 }
 
 /* .test form label:hover{
@@ -89,24 +92,26 @@
 
 .test {
     display: flex;
+    text-align: center;
+    justify-content: center;
 }
 
 .results {
-    display: flex;
-    justify-content: center;
-    margin-top: 15%;
+    margin-top: 5vh;
+    text-align: center;
+
 }
 
 .buttons input,
 .buttons button {
     background-color: #2C599D;
     border: none;
-    width: 15%;
-    margin-left: 10%;
+    width: 22%;
+    margin-left: 16%;
     margin-right: 10%;
     color: #F7AD19;
     height: 50px;
-    margin-top: 2%;
+    margin-top: 5vh;
     border-radius: 50%;
     font-weight: bold;
 }
@@ -126,7 +131,6 @@
     -webkit-appearance: none;
     appearance: none;
     /* background-color: #fff; */
-    margin: 0px;
     color: #11224D;
     width: 1.15em;
     height: 1.15em;
@@ -196,9 +200,17 @@
         display: none;
     }
 
+    .test form div .buttonContainer {
+        height: 22.83px;
+    }
+
+    .header {
+        text-align: center;
+    }
 }
 
 .mode {
     width: 900px;
     height: 35px;
 }
+

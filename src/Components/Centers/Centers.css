@@ -1,9 +1,9 @@
-
 body {
-  margin: 120px 20px; /* Adjust the value of 20px to increase or decrease the margin as needed */
+  margin: 120px auto;
+  /* Adjust the value of 20px to increase or decrease the margin as needed */
 }
 
-.table-setion {
+.table-section {
   font-size: 120%;
   letter-spacing: 2px;
   padding: 20px;
@@ -30,7 +30,7 @@ table tr:nth-child(even) {
 }
 
 table tr:hover {
-  background-color: #ddd;
+  background-color: #beb8b8;
 }
 
 table th,
@@ -43,7 +43,7 @@ tfoot td {
 }
 
 tbody tr {
-  font-size: 150%;
+  font-size: 130%;
   height: 130px;
 }
 
@@ -95,7 +95,7 @@ table a:hover {
 }
 
 table a:visited {
-  color: gray;
+  color: grey;
 }
 
 .table-filter label {

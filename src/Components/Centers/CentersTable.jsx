@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   useReactTable,
   flexRender,
@@ -7,14 +7,14 @@ import {
   getFilteredRowModel,
   getPaginationRowModel,
 } from '@tanstack/react-table';
-import { HiPlay, HiStop } from 'react-icons/hi2'
+import { HiPlayPause, HiStop } from 'react-icons/hi2'
 import "./Centers.css";
 
 
 function CentersTable({ data }) {
   const [sortBy, setSortBy] = useState([]);
   const [filterBy, setFilterBy] = useState("");
-  
+
   const columns = [
     {
       header: 'Audio',
@@ -31,12 +31,18 @@ function CentersTable({ data }) {
           parseInt(zipcode),
         ];
 
-        const startSpeech = () => {
-          for (let text of infoArr) {
-            const speech = new SpeechSynthesisUtterance();
-            speech.text = text;
-            speech.rate = 0.9;
-            window.speechSynthesis.speak(speech);
+        const playPauseSpeech = () => {
+          const synth = window.speechSynthesis;
+
+          if (!synth.speaking && !synth.paused) {
+            for (let text of infoArr) {
+              const speech = new SpeechSynthesisUtterance();
+              speech.text = text;
+              speech.rate = 0.9;
+              window.speechSynthesis.speak(speech);
+            }
+          } else {
+            synth.paused ? synth.resume() : synth.pause();
           }
         }
 
@@ -46,17 +52,11 @@ function CentersTable({ data }) {
 
         return (
           <div className='speech'>
-            <button
-              className='start'
-              onClick={() => startSpeech()}
-            >
-              <HiPlay />
+            <button className='play-pause' onClick={() => playPauseSpeech()}>
+              <HiPlayPause />
             </button>
             &nbsp;
-            <button
-              className='stop'
-              onClick={() => stopSpeech()}
-            >
+            <button className='stop' onClick={() => stopSpeech()}>
               <HiStop />
             </button>
           </div>
@@ -122,6 +122,10 @@ function CentersTable({ data }) {
     onSortingChange: setSortBy,
     onGlobalFilterChange: setFilterBy
   })
+  
+  useEffect(() => {
+    table.setPageSize(5)
+  }, [table])
 
   return (
     <section className="table-section">
@@ -131,6 +135,7 @@ function CentersTable({ data }) {
           id="filter"
           type="text"
           value={filterBy}
+          placeholder="any key"
           onChange={(event) => setFilterBy(event.target.value)}
         />
       </div>

@@ -10,7 +10,7 @@ import fav from '../../assets/blueLogo.PNG'
 
 
 export default function Splash() {
-    const [text, setText] = useState("Unpuzzle the pieces");
+    const [text, setText] = useState("Unpuzzle the pieces (or click the logo)");
     const [solved, setSolved] = useState(false)
 
     const set = () => {

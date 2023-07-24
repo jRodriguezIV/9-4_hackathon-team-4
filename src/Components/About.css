@@ -66,17 +66,6 @@ body {
   flex-direction: column;
 }
 
-/* Add a media query for smaller screens */
-@media (max-width: 768px) {
-  .team-members {
-    max-width: 700px; /* Adjust the maximum width for smaller screens */
-  }
-
-  .member-card {
-    flex: 0 0 calc(33.33% - 20px); /* Adjust the flex value to fit 3 cards in a row with margins */
-    max-width: calc(33.33% - 20px); /* Set the maximum width for each card with margins */
-  }
-}
 
 .member-card h3 {
   font-size: 30px;
@@ -100,7 +89,7 @@ body {
   display: inline-block;
   /* background-color: #007bff; */
   color: #fff;
-  padding: 10px 20px;
+  /* padding: 0px 20px; */
   border-radius: 5px;
   text-decoration: none;
 }
@@ -111,19 +100,35 @@ body {
 
 .member-card {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15),
-              0 12px 36px rgba(0, 0, 0, 0.2);
+  0 12px 36px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
 }
 
 .github-logo {
   margin-top: 10px;
-  padding-top: 10px;
+  /* padding-top: 10px; */
   scale: 2.5;
   color:black
 }
 
 .github-logo:hover {
-outline:5px;
+  outline:5px;
 
 }
+
+
+/* Add a media query for smaller screens */
+@media (max-width: 768px) {
+  .team-members {
+    max-width: 700px; /* Adjust the maximum width for smaller screens */
+  }
+
+  .member-card {
+    display:inline ; /* Adjust the flex value to fit 3 cards in a row with margins */
+
+  }
+
+ 
+}
+
 
