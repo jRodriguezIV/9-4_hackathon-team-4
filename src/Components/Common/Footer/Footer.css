@@ -1,25 +1,28 @@
+
 .Footer {
     background-color: #429EBD;
     font-family: sans-serif;
-    padding: 10vh;
-    margin-top:15vh;
+    padding: 3vh;
+    margin-top: 15vh;
 }
 
 .footerText {
     display: flex;
     justify-content: center;
-    padding-left:15vh;
-
+    align-items: center; /* Added to vertically align content */
+    font-size: 1.5rem;
+    padding: 0 45px;
 }
 
-.footerContact {
-padding-top: 4vh
+.footerContact,
+.footerAbout {
+    padding-top: 4vh;
+    text-align: center; /* Added to center the text content */
 }
 
 .footerImg {
     width: 10%;
-}
-
-.footerAbout {
-    padding-top: 4vh
+    max-width: 100px; /* Limiting the max width of the image */
+    display: block; /* Ensuring the image is a block-level element */
+    margin: 0 auto; /* Centering the image within its container */
 }
