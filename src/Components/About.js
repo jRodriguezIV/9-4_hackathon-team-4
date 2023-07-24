@@ -13,7 +13,7 @@ export default function About({ mode }) {
 
     const teamMembers = [
         {
-            name: "Joseph Rodriquez",
+            name: "Joseph Rodriguez",
             photo: JosephPhoto,
             bio: `I am Joseph Rodriguez, a compassionate and driven junior full stack developer. With a passion for technology and empathy for users, I excel in creating innovative solutions. Continuously seeking growth and learning, I aim to make a positive impact in the ever-changing world of software development.`,
             github: "https://github.com/jRodriguezIV",

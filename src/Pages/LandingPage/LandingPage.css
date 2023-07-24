@@ -14,6 +14,12 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.695);
 }
 
+@media(max-width: 767px) {
+    .textCard {
+        font-size: 100%
+    }
+}
+
 .textCardPlayButton{
     background-color: #F7AD19;
 }

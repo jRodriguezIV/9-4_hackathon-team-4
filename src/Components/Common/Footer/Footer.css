@@ -26,3 +26,25 @@
     display: block; /* Ensuring the image is a block-level element */
     margin: 0 auto; /* Centering the image within its container */
 }
+
+@media(max-width: 767px) {
+
+    .footerText {
+        padding-left:5vh;
+        padding-right:5vh;
+        font-size: 1.15rem;
+    }
+
+    .footerContact {
+        padding-right:5vh;
+    }
+
+    .footerAbout {
+        padding-left:2vh;
+    }
+
+    .footerImg {
+        width: 10vh;
+        padding-right: 2vh;
+    }
+}

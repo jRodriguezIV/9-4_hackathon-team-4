@@ -30,6 +30,7 @@
     box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.25);
 }
 
+
 .puzzle button {
     display: flex;
     flex-direction: column;
@@ -58,7 +59,7 @@
     display: flex;
     align-items: center;
     width: 20%;
-
+    
 }
 
 .topBar {
@@ -77,4 +78,22 @@
 .puzzle a {
     text-decoration: none;
     color: #11224D;
+}
+
+@media (max-width:720px) {
+    .jigsaw-puzzle  {
+        width: 100%;
+    }
+
+    .logoImg {
+        scale:.8;
+    }
+
+    .topBar {
+        margin-left: 1vh;
+    }
+
+    .puzzle h1 {
+        font-size: 160%;
+    }
 }
