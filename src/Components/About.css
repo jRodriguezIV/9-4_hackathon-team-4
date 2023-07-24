@@ -116,6 +116,7 @@ body {
 
 }
 
+
 /* Add a media query for smaller screens */
 @media (max-width: 768px) {
   .team-members {
@@ -126,6 +127,8 @@ body {
     display:inline ; /* Adjust the flex value to fit 3 cards in a row with margins */
 
   }
+
+ 
 }
 
 

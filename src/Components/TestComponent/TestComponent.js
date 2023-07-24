@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { HiPlayPause, HiStop } from 'react-icons/hi2'
+import './TestComponent.css'
 
 export default function TestComponent() {
     let speech = new SpeechSynthesisUtterance();
@@ -87,11 +88,15 @@ export default function TestComponent() {
         setSubmit(true)
     }
 
+    const handleClear = () => {
+        setSubmit(false)
+    }
+
     return (
         <div className="test">
             <form>
-                <h1>Dyslexia Test</h1>
-                <p>Select the checkbox if your answer to the question is <strong>"yes"</strong>.</p>
+                <h1 className="header">Dyslexia Test</h1>
+                <p className="header" style={{marginBottom:"5vh"}}>Select the checkbox if your answer to the question is <strong>"yes"</strong>.</p>
                 <div>
                     <input
                         className="check"
@@ -101,7 +106,10 @@ export default function TestComponent() {
                         checked={test.readSlowly}
                     />
                     <label htmlFor="readSlowly">Do you read slowly?</label>
+                    <div className="buttonContainer">
+
                     &nbsp;<button className='textCardPlayButton' onClick={(event) => textToSpeech('Do you read slowly?', event)}><HiPlayPause /></button>&nbsp;<button className='textCardPauseButton' onClick={(event) => speechPause(event)}><HiStop /></button>
+                    </div>
                 </div>
                 <div>
                     <input
@@ -112,7 +120,10 @@ export default function TestComponent() {
                         checked={test.troubleReading}
                     />
                     <label htmlFor="troubleReading">Did you have trouble learning how to read when you were in school?</label>
+                    <div className="buttonContainer">
+
                     &nbsp;<button className='textCardPlayButton' onClick={(event) => textToSpeech('Did you have trouble learning how to read when you were in school?',event)}><HiPlayPause /></button>&nbsp;<button className='textCardPauseButton' onClick={(event) => speechPause(event)}><HiStop /></button>
+                    </div>
                 </div>
                 <div>
                     <input
@@ -123,7 +134,10 @@ export default function TestComponent() {
                         checked={test.readMoreThanOnce}
                     />
                     <label htmlFor="readMoreThanOnce">Do you often have to read something two or three times before it makes sense?</label>
+                    <div className="buttonContainer">
+
                     &nbsp;<button className='textCardPlayButton' onClick={(event) => textToSpeech('Do you often have to read something two or three times before it makes sense?',event)}><HiPlayPause /></button>&nbsp;<button className='textCardPauseButton' onClick={(event) => speechPause(event)}><HiStop /></button>
+                    </div>
                 </div>
                 <div>
                     <input
@@ -134,7 +148,10 @@ export default function TestComponent() {
                         checked={test.discomfortOutloud}
                     />
                     <label htmlFor="discomfortOutloud">Are you uncomfortable reading out loud?</label>
+                    <div className="buttonContainer">
+
                     &nbsp;<button className='textCardPlayButton' onClick={(event) => textToSpeech('Are you uncomfortable reading out loud?',event)}><HiPlayPause /></button>&nbsp;<button className='textCardPauseButton' onClick={(event) => speechPause(event)}><HiStop /></button>
+                    </div>
                 </div>
                 <div>
                     <input
@@ -145,7 +162,10 @@ export default function TestComponent() {
                         checked={test.omitLetters}
                     />
                     <label htmlFor="omitLetters">Do you omit, transpose, or add letters when you are reading or writing?</label>
+                    <div className="buttonContainer">
+
                     &nbsp;<button className='textCardPlayButton' onClick={(event) => textToSpeech('Do you omit, transpose, or add letters when you are reading or writing?',event)}><HiPlayPause /></button>&nbsp;<button className='textCardPauseButton' onClick={(event) => speechPause(event)}><HiStop /></button>
+                    </div>
                 </div>
                 <div>
                     <input
@@ -156,7 +176,10 @@ export default function TestComponent() {
                         checked={test.spellCheck}
                     />
                     <label htmlFor="spellCheck">Do you find you still have spelling mistakes in your writing even after Spell Check?</label>
+                    <div className="buttonContainer">
+
                     &nbsp;<button className='textCardPlayButton' onClick={(event) => textToSpeech('Do you find you still have spelling mistakes in your writing even after Spell Check?',event)}><HiPlayPause /></button>&nbsp;<button className='textCardPauseButton' onClick={(event) => speechPause(event)}><HiStop /></button>
+                    </div>
                 </div>
                 <div>
                     <input
@@ -167,7 +190,10 @@ export default function TestComponent() {
                         checked={test.difficultPronunciation}
                     />
                     <label htmlFor="difficultPronunciation">Do you find it difficult to pronounce uncommon multi-syllable words when you are reading?</label>
+                    <div className="buttonContainer">
+
                     &nbsp;<button className='textCardPlayButton' onClick={(event) => textToSpeech('Do you find it difficult to pronounce uncommon multi-syllable words when you are reading?',event)}><HiPlayPause /></button>&nbsp;<button className='textCardPauseButton' onClick={(event) => speechPause(event)}><HiStop /></button>
+                    </div>
                 </div>
                 <div>
                     <input
@@ -178,7 +204,10 @@ export default function TestComponent() {
                         checked={test.avoidBooks}
                     />
                     <label htmlFor="avoidBooks">Do you choose to read magazines or short articles rather than longer books and novels?</label>
+                    <div className="buttonContainer">
+
                     &nbsp;<button className='textCardPlayButton' onClick={(event) => textToSpeech('Do you choose to read magazines or short articles rather than longer books and novels?',event)}><HiPlayPause /></button>&nbsp;<button className='textCardPauseButton' onClick={(event) => speechPause(event)}><HiStop /></button>
+                    </div>
                 </div>
                 <div>
                     <input
@@ -189,7 +218,10 @@ export default function TestComponent() {
                         checked={test.hardLang}
                     />
                     <label htmlFor="hardLang">When you were in school, did you find it extremely difficult to learn a foreign language?</label>
+                    <div className="buttonContainer">
+
                     &nbsp;<button className='textCardPlayButton' onClick={(event) => textToSpeech('When you were in school, did you find it extremely difficult to learn a foreign language?',event)}><HiPlayPause /></button>&nbsp;<button className='textCardPauseButton' onClick={(event) => speechPause(event)}><HiStop /></button>
+                    </div>
                 </div>
                 <div>
                     <input
@@ -200,20 +232,23 @@ export default function TestComponent() {
                         checked={test.avoidExReading}
                     />
                     <label htmlFor="avoidExReading">Do you avoid work projects or courses that require extensive reading?</label>
+                    <div className="buttonContainer">
+
                     &nbsp;<button className='textCardPlayButton' onClick={(event) => textToSpeech('Do you avoid work projects or courses that require extensive reading?',event)}><HiPlayPause /></button>&nbsp;<button className='textCardPauseButton' onClick={(event) => speechPause(event)}><HiStop /></button>
+                    </div>
                 </div>
                 <section className="buttons">
                     {/* <input type="submit" className='submit' value='SUBMIT' /> */}
                     <button onClick={(event) => handleSubmit(event)}>SUBMIT</button>
                     <br />
-                    <input type="reset" value='CLEAR' />
+                    <input type="reset" value='CLEAR' onClick={handleClear} />
                 </section>
-            </form>
             <section className="results">
                 {
                     submitted ? <p><h3>Chance of Dyslexia: {counter * 10}% </h3><p>{(counter >= 7) ? `Based on this results you have dyslexia. \n Next steps: review our resources and literacy help centers, you're not alone🫶🏽` : `Based on this results you don't have dyslexia. Please consult an specialist for a concrete diagnostic!`}</p></p> : <p>Submit to view results</p>
                 }
             </section>
+            </form>
         </div>
     )
 }
